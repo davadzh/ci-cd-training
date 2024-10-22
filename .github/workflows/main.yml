@@ -1,0 +1,15 @@
+name: Display file content
+
+on: [push]
+
+jobs:
+  display_content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Display file content
+        run: |
+          echo "Hello world!"
